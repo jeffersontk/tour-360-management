@@ -74,7 +74,7 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="bg-primary flex items-center justify-center w-full text-white">
+      <header className="bg-primary flex items-center justify-center w-full text-white  px-6 lg:px-0">
         <div className="flex justify-between max-w-[1280px] w-full py-4 ">
           <Link href={`/dashboard/projects/${projectId}`}>
             <Button variant="ghost" className="gap-2">

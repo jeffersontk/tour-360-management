@@ -76,7 +76,7 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="bg-primary p-8 text-white flex items-center justify-center w-full">
+      <header className="bg-primary p-8 text-white flex items-center justify-center w-full ">
         <div className="max-w-[1280px] w-full">
           <div className="mb-8 flex items-center justify-between ">
             <div>
