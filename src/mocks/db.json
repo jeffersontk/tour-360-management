@@ -1,0 +1,91 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Tour Virtual Imóvel Luxo",
+      "description": "Apartamento de alto padrão no centro da cidade",
+      "client": "Construtora Prime",
+      "status": "published",
+      "toursCount": 3,
+      "scenesCount": 12,
+      "createdAt": "2025-01-15"
+    },
+    {
+      "id": "2",
+      "name": "Museu Histórico",
+      "description": "Tour interativo pelas exposições permanentes",
+      "client": "Museu Nacional",
+      "status": "draft",
+      "toursCount": 1,
+      "scenesCount": 8,
+      "createdAt": "2025-01-20"
+    },
+    {
+      "id": "3",
+      "name": "Hotel Resort Paradiso",
+      "description": "Apresentação completa das instalações",
+      "client": "Resort Paradiso",
+      "status": "published",
+      "toursCount": 5,
+      "scenesCount": 24,
+      "createdAt": "2025-01-10"
+    }
+  ],
+  "tours": [
+    {
+      "id": "1",
+      "projectId": "1",
+      "name": "Área Social Completa",
+      "description": "Living, sala de jantar e varanda gourmet",
+      "type": "both",
+      "updatedAt": "2025-01-20"
+    },
+    {
+      "id": "2",
+      "projectId": "1",
+      "name": "Suítes Premium",
+      "description": "Master suite e suítes secundárias",
+      "type": "web",
+      "updatedAt": "2025-01-18"
+    },
+    {
+      "id": "3",
+      "projectId": "1",
+      "name": "Áreas Comuns do Condomínio",
+      "description": "Piscina, academia e espaço kids",
+      "type": "vr",
+      "updatedAt": "2025-01-16"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "1",
+      "tourId": "1",
+      "name": "Living Room Principal",
+      "image": "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=4096",
+      "thumb": "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=400",
+      "hotspots": [
+        { "id": "h1", "position": [40, 10, -80], "kind": "image", "title": "Quadro", "mediaUrl": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1280" },
+        { "id": "h2", "position": [-60, -10, 30], "kind": "text", "title": "Sofá", "description": "Sofá em couro natural – 2,30m" }
+      ]
+    },
+    {
+      "id": "2",
+      "tourId": "1",
+      "name": "Varanda Gourmet",
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=4096",
+      "thumb": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400",
+      "hotspots": [
+        { "id": "h3", "position": [50, 15, -60], "kind": "video", "title": "Tour do espaço", "mediaUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" }
+      ]
+    },
+    {
+      "id": "3",
+      "tourId": "1",
+      "name": "Sala de Jantar",
+      "image": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=4096",
+      "thumb": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400",
+      "hotspots": []
+    }
+  ]
+}

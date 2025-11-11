@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Estilos customizados para Tailwind */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.r3f-canvas, .r3f-canvas canvas {
+  touch-action: none;
+}
+
+@layer base {
+  :root {
+    /* ======= GRT – tema CLARO ======= */
+    /* Base */
+    --background: 210 20% 98%;          /* #F5F7FB */
+    --foreground: 222 22% 15%;          /* #1C2333 */
+
+    /* Superfícies */
+    --card: 0 0% 100%;                   /* #FFFFFF */
+    --card-foreground: 222 22% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 22% 15%;
+
+    /* Cores principais */
+    --primary: 219 88% 34%;              /* #1453D1 (azul GRT) */
+    --primary-foreground: 0 0% 100%;     /* branco */
+
+    --secondary: 214 32% 91%;            /* #E6ECF7 (azul clarinho para chips) */
+    --secondary-foreground: 222 22% 20%;
+
+    --muted: 214 32% 91%;
+    --muted-foreground: 222 12% 40%;
+
+    --accent: 221 83% 53%;               /* #2E6FF2 (hover/realce) */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;            /* vermelho padrão shadcn */
+    --destructive-foreground: 0 0% 100%;
+
+    /* Bordas / inputs / anel de foco */
+    --border: 214 28% 86%;               /* linhas suaves */
+    --input: 214 28% 86%;
+    --ring: 219 88% 34%;
+
+    /* Raio padrão dos componentes */
+    --radius: 0.75rem;
+
+    /* Sidebar (se usar) */
+    --sidebar-background: 221 84% 27%;   /* #0F46B0 (azul lateral GRT) */
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 219 88% 34%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 221 83% 53%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 221 84% 23%;
+    --sidebar-ring: 219 88% 34%;
+
+    /* Design tokens auxiliares */
+    --gradient-primary: linear-gradient(135deg, hsl(219 88% 34%), hsl(221 83% 53%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    --shadow-glow: 0 0 28px hsla(219 88% 34% / 0.18);
+    --shadow-card: 0 10px 24px hsla(220 25% 15% / 0.08);
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* ======= (opcional) Tema ESCURO alinhado ao GRT ======= */
+  [data-theme="dark"] {
+    --background: 222 47% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 32% 14%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 32% 14%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 219 88% 60%; /* azul um pouco mais claro no dark */
+    --primary-foreground: 222 47% 10%;
+
+    --secondary: 222 32% 18%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 222 32% 18%;
+    --muted-foreground: 215 20% 70%;
+
+    --accent: 221 83% 63%;
+    --accent-foreground: 222 47% 10%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 26% 22%;
+    --input: 222 26% 22%;
+    --ring: 219 88% 60%;
+
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 219 88% 60%;
+    --sidebar-primary-foreground: 222 47% 10%;
+    --sidebar-accent: 222 32% 18%;
+    --sidebar-accent-foreground: 210 40% 96%;
+    --sidebar-border: 222 26% 22%;
+    --sidebar-ring: 219 88% 60%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(219 88% 60%), hsl(221 83% 63%));
+    --gradient-card: linear-gradient(145deg, hsl(222 32% 14%), hsl(222 47% 10%));
+    --shadow-glow: 0 0 30px hsla(219 88% 60% / 0.18);
+    --shadow-card: 0 10px 28px hsla(220 25% 10% / 0.35);
+  }
+}
+
+/* mantém */
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground; }
+}
