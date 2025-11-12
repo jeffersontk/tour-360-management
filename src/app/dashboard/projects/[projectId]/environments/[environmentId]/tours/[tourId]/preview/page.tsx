@@ -12,7 +12,7 @@ import SceneStandalone, { type Hotspot } from '@/components/three/SceneStandalon
 import { createXRStore, type XRStore } from '@react-three/xr';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 
-import db from '@/mocks/db.json'; // <<<<<<<<<<<<<<<<<< import do json
+import db from '@/mocks/db.json';
 
 type Scene = { id: string; name: string; image: string; thumb?: string; hotspots: Hotspot[] };
 type TourMode = 'web' | 'vr' | 'both';
